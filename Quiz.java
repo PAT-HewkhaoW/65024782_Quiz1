@@ -1,5 +1,3 @@
-
-
 public class Quiz {
 
     public static void main(String[] args) {
@@ -44,28 +42,28 @@ class student {
 
     public void ChangeName(String newName, String Mode) {
         if (Mode == "admin") {
-            System.out.println("Changed " + this.Name + "'s Name to " + newName + "\n");
+            System.out.println(color.GREEN + "Changed " + this.Name + "'s Name to " + newName + "\n" + color.RESET);
             this.Name = newName;
         } else {
-            System.out.println("!You cannot access this function!");
+            System.out.println(color.RED_BACKGROUND + "!You cannot access this function!" + color.RESET);
         }
     }
 
     public void ChangeID(int id, String Mode) {
         if (Mode == "admin") {
-            System.out.println("Changed " + this.Name + "'s ID to " + id + "\n");
+            System.out.println(color.GREEN + "Changed " + this.Name + "'s ID to " + id + "\n" +color.RESET);
             this.ID = id ;
         } else {
-            System.out.println("!You cannot access this function!");
+            System.out.println(color.RED_BACKGROUND + "!You cannot access this function!" + color.RESET);
         }
     }
 
     public void UpdateGPA(double newgpa, String Mode) {
         if (Mode == "admin") {
-            System.out.println("Updated " + this.Name + " GPA " + this.GPA + " to " + newgpa + "\n");
+            System.out.println(color.GREEN + "Updated " + this.Name + " GPA " + this.GPA + " to " + newgpa + "\n" +color.RESET);
             this.GPA = newgpa;
         } else {
-            System.out.println("!You cannot access this function!");
+            System.out.println(color.RED_BACKGROUND + "!You cannot access this function!" + color.RESET);
         }
     }
 }
